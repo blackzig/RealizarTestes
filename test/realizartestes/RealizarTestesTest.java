@@ -43,31 +43,34 @@ public class RealizarTestesTest {
     @Test
     public void testMain() {
 
-        Random gerador = new Random();
-        Double maximoSalario = 4000.00;
-        double salario = gerador.nextDouble() * maximoSalario;
-        //Double salario = 1566.62;
-        System.out.println("Salário " + salario);
+//        Random gerador = new Random();
+//        Double maximoSalario = 4000.00;
+//        double salario = gerador.nextDouble() * maximoSalario;
+//        //Double salario = 1566.62;
+//        System.out.println("Salário " + salario);
 
-        TaxCalculator taxCalculator = new TaxCalculator();
-
-        Double valorSalarioMinimoNivel1 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel1();
-        Double valorSalarioMinimoNivel2 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel2();
-        Double valorSalarioMinimoNivel3 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel3();
-        Double valorSalarioMinimoNivel4 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel4();
-
-        if (salario < valorSalarioMinimoNivel1) {
-            taxCalculator.calculoIRParaONivel0(salario);
-        } else if (salario >= valorSalarioMinimoNivel1 && salario < valorSalarioMinimoNivel2) {
-            taxCalculator.calculoIRParaONivel1(salario);
-        } else if (salario >= valorSalarioMinimoNivel2 && salario < valorSalarioMinimoNivel3) {
-            taxCalculator.calculoIRParaONivel2(salario);
-        } else if (salario >= valorSalarioMinimoNivel3 && salario < valorSalarioMinimoNivel4) {
-            taxCalculator.calculoIRParaONivel3(salario);
-        } else if (salario >= valorSalarioMinimoNivel4) {
-            taxCalculator.calculoIRParaONivel4(salario);
-        }
-
+//        TaxCalculator taxCalculator = new TaxCalculator();
+//
+//        Double valorSalarioMinimoNivel1 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel1();
+//        Double valorSalarioMinimoNivel2 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel2();
+//        Double valorSalarioMinimoNivel3 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel3();
+//        Double valorSalarioMinimoNivel4 = taxCalculator.getFaixalSalarialMínimoPagaImpostoNivel4();
+//
+//        if (salario < valorSalarioMinimoNivel1) {
+//            taxCalculator.calculoIRParaONivel0(salario);
+//        } else if (salario >= valorSalarioMinimoNivel1 && salario < valorSalarioMinimoNivel2) {
+//            taxCalculator.calculoIRParaONivel1(salario);
+//        } else if (salario >= valorSalarioMinimoNivel2 && salario < valorSalarioMinimoNivel3) {
+//            taxCalculator.calculoIRParaONivel2(salario);
+//        } else if (salario >= valorSalarioMinimoNivel3 && salario < valorSalarioMinimoNivel4) {
+//            taxCalculator.calculoIRParaONivel3(salario);
+//        } else if (salario >= valorSalarioMinimoNivel4) {
+//            taxCalculator.calculoIRParaONivel4(salario);
+//        }
+        //insento(salario);
     }
+    
+
+
 
 }

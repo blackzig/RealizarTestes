@@ -45,6 +45,7 @@ public class TaxCalculator {
             Double valorMaximoEsperadoNivel1 = ve.retorneOValorEsperado(valorSalarioMaximoNivel1, taxaParaONivel1);
             Double faixaDeDiferencaSalarialAceitaNivel1 = valorMaximoEsperadoNivel1 - valorMinimoEsperadoNivel1;
             Double impostoASerPago = salario * taxaParaONivel1;
+            System.out.println("impostoASerPago " + impostoASerPago + " para o salário " + salario);
             assertEquals(valorMinimoEsperadoNivel1, impostoASerPago, faixaDeDiferencaSalarialAceitaNivel1);
         } catch (Exception e) {
             System.out.println("Erro calculaIR " + e.getMessage());
@@ -57,6 +58,7 @@ public class TaxCalculator {
             Double valorMaximoEsperadoNivel2 = ve.retorneOValorEsperado(valorSalarioMaximoNivel2, taxaParaONivel2);
             Double faixaDeDiferencaSalarialAceitaNivel2 = valorMaximoEsperadoNivel2 - valorMinimoEsperadoNivel2;
             Double impostoASerPago = salario * taxaParaONivel2;
+            System.out.println("impostoASerPago " + impostoASerPago + " para o salário " + salario);
             assertEquals(valorMinimoEsperadoNivel2, impostoASerPago, faixaDeDiferencaSalarialAceitaNivel2);
         } catch (Exception e) {
             System.out.println("Erro calculaIR " + e.getMessage());
@@ -69,6 +71,7 @@ public class TaxCalculator {
             Double valorMaximoEsperadoNivel3 = ve.retorneOValorEsperado(valorSalarioMaximoNivel3, taxaParaONivel3);
             Double faixaDeDiferencaSalarialAceitaNivel3 = valorMaximoEsperadoNivel3 - valorMinimoEsperadoNivel3;
             Double impostoASerPago = salario * taxaParaONivel3;
+            System.out.println("impostoASerPago " + impostoASerPago + " para o salário " + salario);
             assertEquals(valorMinimoEsperadoNivel3, impostoASerPago, faixaDeDiferencaSalarialAceitaNivel3);
         } catch (Exception e) {
             System.out.println("Erro calculaIR " + e.getMessage());
@@ -81,7 +84,16 @@ public class TaxCalculator {
             Double valorMaximoEsperadoNivel4 = ve.retorneOValorEsperado(valorSalarioMaximoNivel4, taxaParaONivel4);
             Double faixaDeDiferencaSalarialAceitaNivel4 = valorMaximoEsperadoNivel4 - valorMinimoEsperadoNivel4;
             Double impostoASerPago = salario * taxaParaONivel4;
+            System.out.println("impostoASerPago " + impostoASerPago + " para o salário " + salario);
             assertEquals(valorMinimoEsperadoNivel4, impostoASerPago, faixaDeDiferencaSalarialAceitaNivel4);
+        } catch (Exception e) {
+            System.out.println("Erro calculaIR " + e.getMessage());
+        }
+    }
+
+    public void calculoIRParaONivelErro(Double salario) {
+        try {
+            assertEquals(1, 0, 0);
         } catch (Exception e) {
             System.out.println("Erro calculaIR " + e.getMessage());
         }
